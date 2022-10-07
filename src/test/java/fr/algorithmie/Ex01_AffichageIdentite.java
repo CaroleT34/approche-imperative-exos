@@ -26,8 +26,13 @@ public class Ex01_AffichageIdentite {
 		//TODO Utiliser une boucle pour afficher (avec Resultat.log) 10 fois un texte quelconque
 		
 		// TODO Exemple : 
-		for (int i=1; i<=10; i++) {
-			Resultat.log("Coucou");
+//		for (int i=1; i<=10; i++) {
+//			Resultat.log("Coucou");
+//		}
+		
+		// TODO Exercice : 
+		for (int i=0; i<10; i++) {
+			Resultat.log("Je s'appelle Groot");
 		}
 	}
 

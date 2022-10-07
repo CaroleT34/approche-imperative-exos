@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import outils.Exercice;
 import outils.ExerciceRunner;
 import outils.Question;
+import outils.Resultat;
 
 /**
  * Ne modifiez ni les noms des classes, ni les noms des méthodes.
@@ -35,10 +36,28 @@ public class Ex11_FirstLast6 {
 		// TODO Calculez une valeur booléenne qui contrôle le tableau de la sorte :
 		//  o elle vaut true si le tableau a au moins 1 élément et si le premier élément ou le dernier élément vaut 6.
 		//  o elle vaut false dans les autres cas
-
-
 		// TODO LOGUEZ la valeur obtenue pour chacun des 6 tableaux tab1 à tab6
-
+		Resultat.log(resultBool(tab1));
+		Resultat.log(resultBool(tab2));
+		Resultat.log(resultBool(tab3));
+		Resultat.log(resultBool(tab4));
+		Resultat.log(resultBool(tab5));
+		Resultat.log(resultBool(tab6));
+				
+	}
+	
+	public boolean resultBool(int[] tab) {
+		boolean verifBool;
+		
+		if (tab.length > 0 && (tab[0] == 6 || (tab[tab.length-1] == 6))) {
+			verifBool = true;
+			
+		} else {
+			verifBool = false;
+			
+		}
+		
+		return verifBool;
 	}
 
 }
