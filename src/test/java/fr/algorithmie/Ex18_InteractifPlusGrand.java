@@ -32,7 +32,19 @@ public class Ex18_InteractifPlusGrand {
 		// TODO Demander à l'utilisateur de saisir 10 nombres entiers
 		// TODO Affichez chaque nombre saisi avec Resultat.log
 		// TODO Enfin affichez avec Resultat.log le max des 10 nombres
-	
+		System.out.println("Veuillez saisir 10 nombres : ");
+		int maxVal = 0;
+		for (int i=1; i<=10; i++) {
+			int nb = scanner.nextInt();
+			Resultat.log(nb);
+			
+			if (i == 0) {
+				maxVal = nb;
+			} else if(nb > maxVal) {
+				maxVal = nb;
+			} 
+		}
+		Resultat.log(maxVal);
 		
 		scanner.close();
 	}
